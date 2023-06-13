@@ -1,3 +1,14 @@
+# output:
+# login page:
+![image](https://github.com/ayrus-369/salesForecasting/assets/85205650/5eb60a52-4ee6-41e5-becc-c937c10d7d62)
+# file uploading page:
+![image](https://github.com/ayrus-369/salesForecasting/assets/85205650/db7fc5c8-3e32-427b-afc0-ca3dd8b2431b)
+![image](https://github.com/ayrus-369/salesForecasting/assets/85205650/d8a84a45-5af3-468b-befa-546eecfb804e)
+# result page:
+![image](https://github.com/ayrus-369/salesForecasting/assets/85205650/c72858ea-2daf-4477-8356-c6823cf06e51)
+
+
+
 # SalesForecast
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
