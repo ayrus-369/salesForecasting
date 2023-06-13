@@ -1,0 +1,40 @@
+
+<html>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img
+          src="assets/img/upload.svg"
+          alt="Image"
+        />
+      </div>
+      <div class="upload-form">
+        <h2>Upload your file</h2>
+        <form  enctype="multipart/form-data" method="post">
+          <label for="file-upload">Choose file:</label>
+          <input required [(ngModel)]="file" (change)="getFile($event)"  type="file" name="file" /><br /><br />
+          <label for="periodicity">Periodicity:</label>
+          <select [(ngModel)]="periodicity" required id="periodicity" name="periodicity">
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+            
+            </select
+          ><br /><br />
+          <label for="number-input" >Number:</label>
+          <input
+          required
+           [(ngModel)]="number"
+            type="number"
+            id="number-input"
+            name="number"
+            min="1" max="50"
+          /><br /><br />
+          <input type="submit"  value="Predict" (click)=" getprediction()" />
+          
+          <ngx-spinner type="ball-scale-multiple"><p style="font-size: 20px; color: rgb(249, 248, 248)">Predicting Your Dataset...</p></ngx-spinner>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

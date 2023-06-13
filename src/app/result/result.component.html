@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <h1>Sales Forecasting Results</h1>
+      <div class="image-container">
+        <img src="assets/img/forecastresult_1.png" alt="Image 1">
+        
+        <img src="assets/img/forecastresult_2.png" (load)="imageLoaded()" alt="Image 2">
+      </div>
+      <button  type="submit" mat-raised-button  (click)="downloadFile()" type="reset">
+        <label >Download Predicted CSV File</label>
+      </button>
+      <div class="result-container" >
+        <h2>Prediction Metrics:</h2>
+        <ul>
+          <li>Mean Squared Error: <span>{{mse}}</span></li>
+          <li>Root Mean Square Error: <span>{{rmse}}</span></li>
+          <li>Mean Absoulte Error: <span>{{mae}}</span></li>
+          <li>Mean Absoulte Percentage Error: <span>{{mape}}%</span></li>
+        </ul>
+        
+      </div>
+    </div>
+  </body>
+</html>
+
+  
